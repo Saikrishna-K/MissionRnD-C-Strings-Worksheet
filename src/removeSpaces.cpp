@@ -12,7 +12,7 @@ ERROR CASES: Return '\0' for invalid inputs.
 NOTES: Don't create new string.
 */
 
-char removeSpaces(char *str) {
+char* removeSpaces(char *str) {
 
 	if (str == NULL || str == '\0')return '\0';
 
@@ -29,5 +29,5 @@ char removeSpaces(char *str) {
 	}
 
 	str[j] = '\0';
-
+	return str;
 }
